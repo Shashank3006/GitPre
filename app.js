@@ -8,7 +8,14 @@ function app(abc){
 }
 const abc=app(`rrr`);
 abc(2); // Output: 3
-const abc1= document.querySelector('#show');
-abc1.addEventListener('click', function() {
-    abc(5); // Output: 2
-});
+let show=document.querySelector('#show')
+show.addEventListener('click',()=>{
+   let a= document.createElement('h2')
+    a.innerText="Hello World"
+   let b=document.createElement('div')
+   show.className="box"
+   b.className="box1"
+   b.append(a)
+   show.append(b)
+
+})

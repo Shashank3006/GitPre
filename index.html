@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css Document</title>
-    <style>
-.box{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-}
-.box1{
-    width: 300px;
-    height: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    <title>Document</title>
+     <style>
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+      width: auto;
+      height: auto;
+      background-color: coral;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      border-radius: 8px;
+    }
+    .box1{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 81, 255);
+        margin: 1px;
+        box-sizing: border-box;
+        overflow: inherit;
+    }
     </style>
-        
 </head>
 <body>
-    <div id="show"></div>
+    <div id="show">
+        <h1>Weather App</h1>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
